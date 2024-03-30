@@ -1,6 +1,6 @@
 # goshasum
 
-CLI tool to create recursively shasum file for directory.
+CLI tool to create recursively shasum file for directory contents. 
 
 ## Usage:
 
