@@ -61,12 +61,13 @@ func main() {
 	}
 	flag.Parse()
 
-	if len(os.Args) < 2 {
+	if flag.NArg() < 1 {
+		log.Fatal("Missinng <path> argument")
 		flag.PrintDefaults()
-		log.Fatal("[PATH] is required")
+		return
 	}
 
-	target := os.Args[1]
+	target := flag.Arg(0)
 
 	fileInfo, err := os.Stat(target)
 
