@@ -88,7 +88,7 @@ func main() {
 					log.Fatal(err)
 				}
 				if *outputFile == "" {
-					fmt.Println(hash, path)
+					fmt.Printf("%s  %s\n", hash, path)
 				}
 			}
 
@@ -101,7 +101,7 @@ func main() {
 		}
 
 		if *outputFile == "" {
-			fmt.Println(hash, target)
+			fmt.Printf("%s  %s\n", hash, target)
 		}
 	}
 }
